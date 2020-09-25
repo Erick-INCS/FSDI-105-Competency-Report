@@ -1,0 +1,227 @@
+:root {
+    --primaryColor: rgb(158, 129, 92);
+    --primaryDark: #000;
+}
+
+.btn-success {
+    background-color: #2acf82;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: rgb(92, 163, 130);
+}
+
+
+.pet {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#petSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.totals {
+    display: block;
+    border: 1px dashed black;
+    width: 10rem;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+section.totals {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.bg-gray0 {
+    background-color: #f8f8f8;
+}
+
+.firstDiv {
+    padding: 1rem 0;
+}
+
+main.container {
+    margin-top: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+main h2 {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.6rem;
+}
+
+input[type="button"] {
+    margin: 0 auto;
+    display: block;
+}
+
+i {
+    text-align: center;
+    width: 100%;
+    color: lightblue;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#mainJT {
+    background-image: url(../img/pet02.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+a {
+    color: var(--primaryColor);
+    border-bottom: 1px solid transparent; 
+}
+
+a:hover {
+    color: var(--primaryDark);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--primaryDark); 
+}
+
+#serviceList h5 {
+    color: var(--primaryColor);
+}
+
+a.selected {
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+#serviceList section {
+    padding: 1rem;
+}
+
+#serviceList img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.active {
+    border: 2px solid yellowgreen;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+img#logo {
+    width: 100px;
+}
+
+.container-services {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid beige;
+}
+
+#map {
+    background-color: #dedede;
+    height: 400px;
+    width: 100%;
+}
+
+.slides {
+    width: 100%;
+    height: 22rem;
+    position: relative;
+    overflow: hidden;
+}
+
+div#displayL {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    /* border: 1px solid yellowgreen; */
+    left: -100%;
+}
+
+div#displayR {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    /* border: 1px solid yellowgreen; */
+    left: 100%;
+}
+
+div#display0 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/pet02.webp);
+    position: absolute;
+    left: -100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+div#display1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/pet01.webp);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+}
+
+
+div#displayL span{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: rgba(255,255,255,.71);
+    right: -5rem;
+    top: 37%;
+}
+
+div#displayR span{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: rgba(255,255,255,.71);
+    left: -5rem;
+    top: 37%;
+}
+
+div#displayL span:hover{
+    cursor: pointer;
+}
+
+div#displayR span:hover{
+    cursor: pointer;
+}
